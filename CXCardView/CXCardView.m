@@ -882,8 +882,15 @@ static CXCardView *__cx_cardview_current_view;
 {
     return YES;
 }
+
 - (BOOL)prefersStatusBarHidden
 {
     return _rootViewControllerPrefersStatusBarHidden;
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 @end
